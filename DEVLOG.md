@@ -2,7 +2,30 @@
 
 Handoff notes for picking this project back up. Repo is a static site, no build step (see [README.md](README.md) for file layout and deploy steps).
 
-## Current state (as of 2026-07-18)
+## Revamp (2026-09-27, branch `revamp-2026-09`)
+
+**What changed**
+- **Brand structure.** The site now presents **Vyoma Wellness Group** with two brands: **Vyoma Incense** and **Vyoma Wellness** (the nightly ritual app, coming soon). `wellness.html` is now the app page, with the four-step ritual and a Formspree waitlist form. It replaces the old "wellness benefits" page.
+- **Products and prices.** Five fragrances, 13 sticks per box. The **5-Pack is $10** and the **10-Pack Starter Kit is $20** (suggested retail). Wholesale pricing isn't published; retailers get it on the line sheet via `contact.html?type=wholesale`. The old 20-stick $8.99 packs, cones, bulk bags and 40–50% discount tiers are gone.
+- **Claims.** Removed:
+  - health and medical claims (blood pressure, bacteria, cortisol, sleep, respiratory);
+  - "organic," "fair trade," "charcoal-free" and "lab-tested," until the supplier's documentation supports them;
+  - the placeholder testimonials, the market statistics and the "Bangalore / Malleswaram" origin (the supplier's location is unconfirmed; the site now says "India").
+
+  Added "Burn with care" directions and an app disclaimer (not a medical device; never sleep with incense burning).
+- **Images.** The base64 logos were replaced with web-sized files in `assets/`, taking pages from 400–840 KB to 12–22 KB.
+- **Layout.** New responsive components are appended to `shared.css` ("v3 components"). Grids now collapse properly on phones.
+- **Pages.** The nav and footer are identical on all 11 pages; the footer copyright reads "Vyoma Wellness Group". Contact email is standardized to `hello@vyomaincense.com`, matching the policy pages.
+- **Hosting.** `_headers` adds response headers for Cloudflare Pages.
+
+**Still open**
+- Confirm the 5-Pack and 10-Pack contents (one or two of each fragrance, the starter-kit items, app access) before launch.
+- Create the mailbox for `hello@vyomaincense.com`, plus the `privacy@`, `returns@`, `b2b@`, `legal@` and `accessibility@` addresses the policies use.
+- Legal text still names "Vyoma LLC". Update it once the entity (Vyoma Incense LLC under Vyoma Wellness Group) is formed and counsel has reviewed it. The shipping policy also mentions international shipping, which isn't planned.
+- The Instagram and Facebook links were removed from the footer; add them back when the handles exist.
+- Once a custom domain is live, update the domain in the policies and the Formspree allowed-domains setting.
+
+## State before the revamp (as of 2026-07-18)
 
 - Local `main` is in sync with `origin/main` (`https://github.com/harshaeeb/vyoma-website-c.git`), commit `a6772d4`, clean working tree.
 - Pages: `index.html`, `fragrances.html`, `wellness.html`, `wholesale.html`, `contact.html`, plus `policies/` (hub + 5 legal pages: terms, privacy, refund, shipping, accessibility).
