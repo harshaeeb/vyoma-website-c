@@ -19,7 +19,7 @@ Handoff notes for picking this project back up. Repo is a static site, no build 
 - **Hosting.** `_headers` adds response headers for Cloudflare Pages.
 
 **Still open**
-- Confirm the 5-Pack and 10-Pack contents (one or two of each fragrance, the starter-kit items, app access) before launch.
+- Pack contents were confirmed on 2026-09-28: 13 sticks per box; the 5-Pack has one box per fragrance; the 10-Pack has two per fragrance plus a starter kit and a ritual page. The site no longer promises app access or specific starter-kit items. Still to confirm: what exactly is in the starter kit.
 - Create the mailbox for `hello@vyomaincense.com`, plus the `privacy@`, `returns@`, `b2b@`, `legal@` and `accessibility@` addresses the policies use.
 - Legal text still names "Vyoma LLC". Update it once the entity (Vyoma Incense LLC under Vyoma Wellness Group) is formed and counsel has reviewed it. The shipping policy also mentions international shipping, which isn't planned.
 - The Instagram and Facebook links were removed from the footer; add them back when the handles exist.
