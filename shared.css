@@ -324,3 +324,26 @@ a.plate:hover .arch { box-shadow: 0 30px 60px -24px rgba(212,136,10,.6); }
   .profile dd { margin-bottom: .6rem; }
   .pack { padding: 2.4rem 1.6rem 2rem; }
 }
+
+/* ── v5 photos: fixed, locked image sizes (2026-09-28) ── */
+.arch::after { display: none; }
+.arch img, .pack__art img, .pair__art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.arch img { position: relative; z-index: 1; }
+.hero__arch { width: 420px; height: 525px; aspect-ratio: auto; flex: none; }
+.page-hero__arch { width: 220px; height: 280px; aspect-ratio: auto; }
+.plate .arch { width: 100%; max-width: 220px; height: auto; aspect-ratio: 3 / 4; margin: 0 auto; }
+.profile, .profile:nth-of-type(even) { grid-template-columns: 260px 1fr; }
+.profile:nth-of-type(even) { grid-template-columns: 1fr 260px; }
+.profile__art .arch { width: 260px; height: 347px; aspect-ratio: auto; }
+.pack__art { height: 210px; margin: -1rem -1rem 1.8rem; border-radius: 16px; overflow: hidden; }
+.pair__art { height: 200px; border-radius: 18px; overflow: hidden; }
+@media (max-width: 860px) {
+  .hero__arch { width: 260px; height: 325px; }
+  .profile, .profile:nth-of-type(even) { grid-template-columns: 1fr; }
+  .profile__art .arch { width: 220px; height: 293px; }
+  .pack__art { height: 180px; }
+}
+@media (max-width: 860px) {
+  .page-hero__arch { display: block; width: 160px; height: 204px; margin: 0 0 1.8rem; order: -1; }
+  .page-hero__grid > :last-child { order: -1; }
+}
