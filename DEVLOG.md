@@ -2,6 +2,12 @@
 
 Handoff notes for picking this project back up. Repo is a static site, no build step (see [README.md](README.md) for file layout and deploy steps).
 
+## Stylesheet caching fix (2026-09-28)
+
+- `_headers` had cached `/shared.css` for 24h. Returning visitors could get the new HTML (with photos) with the old CSS (no size locks), so the photos rendered huge.
+- `/shared.css` is now `max-age=0, must-revalidate`. Every page links `shared.css?v=YYYYMMDDx`.
+- **Bump the `?v=` value whenever `shared.css` changes.**
+
 ## Photography (2026-09-28, v5)
 
 - **Photos replace drawings.** The SVG line art was replaced with 12 AI-generated photographs (Higgsfield, GPT Image 2.5, high quality, about 18 credits). They sit in `assets/photos/*.webp` at 800px, 26–98 KB each. They show atmosphere and ingredients only: no people, no text, and no Vyoma-branded packaging, because real packaging doesn't exist yet. Replace the pack photos with real product shots when available.
