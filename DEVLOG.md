@@ -16,10 +16,10 @@ Handoff notes for picking this project back up. Repo is a static site, no build 
 - **Images.** The base64 logos were replaced with web-sized files in `assets/`, taking pages from 400–840 KB to 12–22 KB.
 - **Layout.** New responsive components are appended to `shared.css` ("v3 components"). Grids now collapse properly on phones.
 - **Pages.** The nav and footer are identical on all 11 pages; the footer copyright reads "Vyoma Wellness Group". Contact email is standardized to `hello@vyomaincense.com`, matching the policy pages.
-- **Hosting.** `_headers` adds response headers for Cloudflare Pages.
+- **Hosting.** Live on Cloudflare Pages at https://vyoma-website-1tp.pages.dev/ (GitHub Pages is off). `_headers` adds response headers, `404.html` handles unknown paths, and `_redirects` keeps README/DEVLOG off the site.
 
 **Still open**
-- Pack contents were confirmed on 2026-09-28: 13 sticks per box; the 5-Pack has one box per fragrance; the 10-Pack has two per fragrance plus a starter kit and a ritual page. The site no longer promises app access or specific starter-kit items. Still to confirm: what exactly is in the starter kit.
+- Pack contents were confirmed on 2026-09-28: 13 sticks per box; the 5-Pack has one box per fragrance; the 10-Pack has two per fragrance plus a starter kit and a ritual page. The site no longer promises app access or specific starter-kit items. The starter kit is a small incense holder (confirmed 2026-09-28), and the 10-Pack Starter Kit is $21. A no-kit 10-Pack ($16) is planned as a later refill option; it isn't on the site yet.
 - Create the mailbox for `hello@vyomaincense.com`, plus the `privacy@`, `returns@`, `b2b@`, `legal@` and `accessibility@` addresses the policies use.
 - Legal text still names "Vyoma LLC". Update it once the entity (Vyoma Incense LLC under Vyoma Wellness Group) is formed and counsel has reviewed it. The shipping policy also mentions international shipping, which isn't planned.
 - The Instagram and Facebook links were removed from the footer; add them back when the handles exist.
