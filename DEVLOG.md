@@ -2,6 +2,21 @@
 
 Handoff notes for picking this project back up. Repo is a static site, no build step (see [README.md](README.md) for file layout and deploy steps).
 
+## Photography (2026-09-28, v5)
+
+- **Photos replace drawings.** The SVG line art was replaced with 12 AI-generated photographs (Higgsfield, GPT Image 2.5, high quality, about 18 credits). They sit in `assets/photos/*.webp` at 800px, 26–98 KB each. They show atmosphere and ingredients only: no people, no text, and no Vyoma-branded packaging, because real packaging doesn't exist yet. Replace the pack photos with real product shots when available.
+- **Image sizes are locked in `shared.css`** (v5 block):
+
+  | Image | Desktop | Mobile |
+  |---|---|---|
+  | Hero | 420×525 | 260×325 |
+  | Page-header arch | 220×280 | 160×204 |
+  | Fragrance plates | up to 220px wide, 3:4 | — |
+  | Fragrance profiles | 260×347 | 220×293 |
+  | Pack cards | 210px tall | 180px tall |
+
+  Every image has a width and height set, is cropped to fill its frame, and loads lazily below the fold.
+
 ## Luxury redesign (2026-09-28, v4)
 
 - **Palette:** unchanged (crimson, saffron, ivory, blush). Crimson is used as a rich focal colour (hero arch, fragrance plates, ritual band); the light base stays.
