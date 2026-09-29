@@ -2,6 +2,16 @@
 
 Handoff notes for picking this project back up. Repo is a static site, no build step (see [README.md](README.md) for file layout and deploy steps).
 
+## Luxury redesign (2026-09-28, v4)
+
+- **Palette:** unchanged (crimson, saffron, ivory, blush). Crimson is used as a rich focal colour (hero arch, fragrance plates, ritual band); the light base stays.
+- **Fonts:** Bodoni Moda (headings) and Jost (body) replace Cormorant Garamond and Montserrat. The logo is an image, so it's unaffected.
+- **Signature motif:** the jharokha arch. It frames an animated incense stick in the hero (the only motion; it stops when the visitor's system asks for reduced motion) and five line-art fragrance plates. Also new:
+  - SVG pack illustrations;
+  - icons for the ritual timeline, the wholesale steps and the partner types.
+- **Removed:** the scrolling marquee, the fade-in reveals on every section, and the all-caps labels.
+- **Built from one script.** All pages come from one Python builder (kept outside the repo). Policy pages keep their own content and pick up the new menu, footer and fonts.
+
 ## Revamp (2026-09-27, branch `revamp-2026-09`)
 
 **What changed**
